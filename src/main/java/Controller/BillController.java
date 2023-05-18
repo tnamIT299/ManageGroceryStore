@@ -243,6 +243,11 @@ public class BillController implements Initializable {
             });
 
 
+
+
+
+
+
     }
     private void showDetailBill(){
         tc_productName.setCellValueFactory(new PropertyValueFactory<>("productName"));
