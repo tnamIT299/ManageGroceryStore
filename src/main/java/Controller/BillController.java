@@ -184,11 +184,6 @@ public class BillController implements Initializable {
                 }
             }
         });
-
-
-
-
-
     }
     private void showData(){
         tc_STT.setCellValueFactory(new PropertyValueFactory<>("sequence"));
@@ -241,12 +236,6 @@ public class BillController implements Initializable {
                 tv_showBill.getSelectionModel().selectFirst();
             }
             });
-
-
-
-
-
-
 
     }
     private void showDetailBill(){

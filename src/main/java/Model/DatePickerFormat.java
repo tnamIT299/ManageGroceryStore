@@ -24,7 +24,6 @@ public class DatePickerFormat {
                 return string == null || string.isEmpty() ? null : LocalDate.parse(string, dateFormatter);
             }
         };
-
         datePicker.setConverter(converter);
     }
 
