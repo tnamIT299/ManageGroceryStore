@@ -87,6 +87,7 @@ public class DetailBillController implements Initializable {
         }
         productList = FXCollections.observableArrayList(selectedBill.getProductList());
         tv_showDetailBill.setItems(productList);
+
     }
 
 
