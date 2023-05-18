@@ -16,8 +16,6 @@ import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static Model.InventoryAlert.errorAlert;
-
 public class SignUpController extends InventoryAlert implements Initializable {
 
     public TextField email;
@@ -102,9 +100,6 @@ public class SignUpController extends InventoryAlert implements Initializable {
                         errorAlert("ERROR","Email is Invalid");
                     }
                 }
-
-
-
             }
         });
 

@@ -42,7 +42,6 @@ public class LoginController extends InventoryAlert {
         stage .setTitle(title);
         stage.setMaximized(true);
         stage.setFullScreen(true);
-        //stage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
         stage.setScene(new Scene(root,1300, 900));
         stage.setResizable(true);
         stage.centerOnScreen();
@@ -74,7 +73,6 @@ public class LoginController extends InventoryAlert {
         stage .setTitle(title);
         stage.setMaximized(true);
         stage.setFullScreen(true);
-        //stage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
         stage.setScene(new Scene(root,620, 670));
         stage.setResizable(true);
         stage.centerOnScreen();
@@ -106,7 +104,6 @@ public class LoginController extends InventoryAlert {
         stage .setTitle(title);
         stage.setMaximized(true);
         stage.setFullScreen(true);
-        //stage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
         stage.setScene(new Scene(root,1000, 900));
         stage.setResizable(true);
         stage.centerOnScreen();

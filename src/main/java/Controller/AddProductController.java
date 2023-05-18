@@ -2,10 +2,8 @@ package Controller;
 
 import DAO.CategoryDao;
 import DAO.ProductDAO;
-import DAO.StaffDAO;
 import DAO.SupplierDAO;
 import Model.CameraApp;
-import Model.Category;
 import Model.Product;
 import Model.Supplier;
 import javafx.event.ActionEvent;
@@ -14,7 +12,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -25,11 +25,9 @@ import javafx.util.StringConverter;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.ResourceBundle;
 
 import static Model.InventoryAlert.errorAlert;
 import static Model.InventoryAlert.informationAlert;
@@ -97,8 +95,6 @@ public class AddProductController extends ProductController implements Initializ
         //Định dạng DatePicker thành dd/mm/yyyy
         setDatePickerConverter(dp_addProductManufractureDate);
         setDatePickerConverter(dp_addProductExpireDate);
-//        cb_addProductCategory.getItems().addAll("Thực phẩm tươi sống","Thực phẩm chế biến sẵn","Hàng gia dụng", "Đồ dùng cá nhân","Vật dụng học tập và văn phòng phẩm",
-//                "Hóa phẩm và chất tẩy rửa","Đồ chơi và quà tặng","Thuốc và vật dụng y tế");
         setBtnBackAction();
 
         setUpMenuAdd();

@@ -1,10 +1,8 @@
 package Controller;
 
 import DAO.CustomerDAO;
-import DAO.ProductDAO;
 import Model.CameraApp;
 import Model.Customer;
-import Model.Product;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -78,6 +76,7 @@ public class CustomerController extends ItemController implements Initializable 
                 }
             }
         });
+
         choiceBox.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -91,6 +90,7 @@ public class CustomerController extends ItemController implements Initializable 
 
             }
         });
+
         btn_add_user.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {

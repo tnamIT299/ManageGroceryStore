@@ -3,12 +3,10 @@ package Controller;
 import DAO.CategoryDao;
 import DAO.ProductDAO;
 import DAO.SupplierDAO;
-import Model.InventoryAlert;
 import Model.Product;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
@@ -88,7 +86,6 @@ public class DetailProductController extends ProductController implements Initia
     @Override
     public void initialize (URL url, ResourceBundle resourceBundle)  {
         cb_mfgDate.setStyle("-fx-font-size  :18px");
-       // setBtnBackAction();
 
         btn_update.setOnAction(new EventHandler<ActionEvent>() {
             @Override
