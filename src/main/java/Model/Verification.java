@@ -1,7 +1,5 @@
 package Model;
 
-import java.util.regex.Pattern;
-
 public class Verification extends InventoryAlert {
     public static Boolean CheckUsername(String username) {
         if (username.isEmpty() || username.length() <6) {
@@ -16,6 +14,7 @@ public class Verification extends InventoryAlert {
         }
         return true;
     }
+
     public static boolean isValidPassword(String password) {
         // Kiểm tra độ dài của mật khẩu
         if (password.length() < 8) {

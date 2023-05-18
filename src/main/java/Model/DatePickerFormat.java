@@ -14,7 +14,6 @@ public class DatePickerFormat {
 
     public void setDatePickerConverter(DatePicker datePicker) {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-
         StringConverter<LocalDate> converter = new StringConverter<LocalDate>() {
             @Override
             public String toString(LocalDate date) {

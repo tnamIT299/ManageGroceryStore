@@ -68,7 +68,6 @@ public class UserProfileController extends InventoryAlert implements Initializab
     @FXML
     public void chooseImageButton(ActionEvent event) throws IOException {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
         fileChooser = new FileChooser();
         fileChooser.setTitle("Open image");
 
@@ -78,7 +77,6 @@ public class UserProfileController extends InventoryAlert implements Initializab
 
         fileChooser.setInitialDirectory(userDirectory);
         filePath = fileChooser.showOpenDialog(stage);
-
 
         //cập nhật ảnh mới
         Image image = new Image(String.valueOf(filePath));
