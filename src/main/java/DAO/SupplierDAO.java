@@ -25,6 +25,7 @@ public class SupplierDAO extends InventoryAlert implements DaoInterface <Supplie
             e.printStackTrace();
         }
     }
+
     @Override
     public int insert(Supplier supplier) {
         int sid=0;

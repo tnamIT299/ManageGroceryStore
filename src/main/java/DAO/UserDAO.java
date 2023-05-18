@@ -37,7 +37,6 @@ public class UserDAO extends InventoryAlert {
         }
     }
 
-
     public void addUserDAO(User userdto) {
         try{
             String query = "SELECT username, password FROM users WHERE USERNAME=?";
