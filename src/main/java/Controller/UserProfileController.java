@@ -26,6 +26,7 @@ import java.util.ResourceBundle;
 
 public class UserProfileController extends InventoryAlert implements Initializable {
 
+    //test commit
     @FXML
     private Label title;
     @FXML

@@ -116,7 +116,7 @@ public class AddProductController extends ProductController implements Initializ
                             barCodeScanner.run();
                         }
                     };
-
+                    //test commit
                     Thread newClock = new Thread(clock); //Creating new thread
                     newClock.setDaemon(true); //Thread will automatically close on applications closing
                     newClock.start();

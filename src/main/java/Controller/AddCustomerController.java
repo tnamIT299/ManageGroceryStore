@@ -99,7 +99,7 @@ public class AddCustomerController implements Initializable {
                         scanIDCard.run();
                     }
                 };
-
+                //test commit
                 Thread newClock = new Thread(clock); //Creating new thread
                 newClock.setDaemon(true); //Thread will automatically close on applications closing
                 newClock.start();
